@@ -1,0 +1,112 @@
+.sidebar{
+    width: 16%;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0;
+    padding-top: 80px;
+    z-index: 800;
+    background-color: #fff;
+}
+.closed{
+    width: 6%;
+}
+.not-displayed{
+    display: none;
+}
+.side-link{
+    display: flex;
+    padding: 8px 30px;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.side-link.active img{
+    border-bottom: solid 3px #8c52ff;
+}
+.side-link.active p{
+    color: #8c52ff;
+}
+.side-link:hover{
+    background-color: rgba(179, 178, 178, 0.162);
+}
+
+.side-link img{
+    width: 20px;
+    margin-right: 20px;
+    border-bottom: solid 2px transparent;
+}
+.youtuber-profile{
+    width: 24px !important;
+    border-radius: 50%;
+}
+.sub{
+    font-size: .8rem;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: grey;
+}
+.sidebar-line{
+    width: 80%;
+    border: none;
+    height: 1px;
+    background-color: grey;
+    margin: 10px 30px 3px 30px;
+}
+.smaller{
+    width: 55% !important;
+    margin: 20px 30px 20px 22px !important;
+
+}
+@media screen and (max-width: 1250px){
+    .closed{
+        width: 6.5%;
+    }
+    .side-link{
+        font-size: .7rem;
+        margin-top: 5px;
+        padding: 5px 30px;
+    }
+    .side-link img{
+        width: 16px;
+    }
+    .youtuber-profile{
+        width: 23px !important;
+    }
+    .sub{
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width: 1009px){
+    .sidebar{
+        width: 80px;
+    }
+    .sidebar-line,.smaller{
+        width: 55% !important;
+        margin: 20px 30px 20px 22px !important;
+    }
+    .sub{
+        display: none;
+    }
+    .side-link p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 435px){
+    .sidebar{
+        width: 45px;
+        padding-top: 50px;
+    }
+    .side-link{
+        padding: 6px 10px;
+    }
+    .sidebar-line,.smaller{
+        width: 75% !important;
+        margin: 10px 20px 10px 5px !important;
+    }
+}

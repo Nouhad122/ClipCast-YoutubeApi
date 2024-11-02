@@ -1,0 +1,19 @@
+.play-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 20px
+}
+@media screen and (max-width: 911px){
+    .play-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 90px;
+        padding-left: 2%;
+        padding-right: 2%;
+        gap: 20px;
+    }
+}

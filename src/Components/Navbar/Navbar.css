@@ -1,0 +1,115 @@
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    box-shadow: 0px 2px 15px 1px rgb(196, 195, 195);
+    position: fixed;
+    top: 0;
+    z-index: 900;
+    width: 100%;
+}
+nav .menu-logo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.menu-logo .menu-icon{
+    width: 4vh;
+    height: 2vh;
+}
+.menu-logo .logo{
+   height: 5vh;
+   width: 9vw;
+    flex-shrink: 1;
+}
+nav .search-container{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.search-container input{
+    width: 25vw;
+    padding: 7px 15px;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    border: solid 1px rgb(115, 115, 115);
+}
+.search-container .search-icon{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 92%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+nav .nav-icons{
+    display: flex;
+    gap: 25px;
+}
+.nav-icons .upload-icon{
+    width: 4vh;
+    height: 3.5vh;
+}
+.nav-icons img{
+    width: 4vh;
+    height: 4vh;
+}
+.nav-icons .profile-pic{
+    border-radius: 50%;
+}
+@media screen and (max-width: 1250px){
+    .search-container input{
+        font-size: .9rem;
+        padding: 8px 15px;
+    }
+    
+}
+@media screen and (max-width: 1009px){
+    nav .nav-icons{
+        gap: 10px;
+    }
+    .nav-icons img{
+        width: 28px;
+        height: 28px;
+    }
+    .nav-icons .upload-icon{
+        width: 28px;
+        height: 24px;
+    }
+    nav .menu-logo{
+        gap: 15px;
+    }
+    .menu-logo .menu-icon{
+        display: none;
+    }
+    .menu-logo .logo{
+        width: 20vw;
+        height: 5vh;
+        flex-shrink: 1;
+    }
+}
+@media screen and (max-width: 492px){
+    nav{
+        padding: 10px;
+    }
+    .nav-icons .profile-pic{
+        display: none;
+    }
+    .nav-icons .upload-icon{
+        width: 20px;
+        height: 16px;
+    }
+    .nav-icons img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .search-container input{
+        width: 35vw;
+    }
+}

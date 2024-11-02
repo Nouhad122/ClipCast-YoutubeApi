@@ -1,0 +1,19 @@
+.container{
+    padding: 60px 2% 20px 17%;
+    background-color: rgb(240, 238, 238);
+}
+.large-container{
+    padding-left: 7%;
+}
+@media screen and (max-width: 1009px){
+    .container{
+    padding: 60px 2% 20px 12%;
+    }
+}
+@media screen and (max-width: 692px){
+    .container{
+    padding: 60px 5% 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    }
+}

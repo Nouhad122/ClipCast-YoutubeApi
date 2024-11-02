@@ -1,0 +1,74 @@
+.rec-vid{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 35vw;
+}
+.rec-vid img{
+    width: 14vw;
+}
+.rec-vid .rec-vid-infos h4{
+    font-size: 1rem;
+}
+
+.rec-vid .rec-vid-infos h3{
+    margin-top: 10px;
+    font-size: .9rem;
+}
+.rec-vid .rec-vid-infos p{
+    font-size: .8rem;
+    margin-top: 5px;
+}
+.recommended{
+    display: none;
+}
+@media screen and (max-width: 1250px){
+    .rec-vid img{
+        width: 18vw;
+    }
+    .rec-vid .rec-vid-infos h4{
+        font-size: .9rem;
+    }
+    .rec-vid .rec-vid-infos h3{
+        font-size: .8rem;
+    }
+    .rec-vid .rec-vid-infos p{
+        font-size: .7rem;
+        margin-top: 5px;
+    }
+    .rec-vid{
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 911px){
+    .recommended-videos{
+        width: 100%;
+    }
+    .rec-vid img{
+        width: 25vw;
+    }
+    .recommended{
+        display: block;
+        font-size: 1rem;
+        margin: 20px 0;
+    }
+    .rec-vid{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 551px){
+    .rec-vid img{
+        width: 50vw;
+    }
+    .rec-vid .rec-vid-infos h4{
+        font-size: .8rem;
+    }
+    .rec-vid .rec-vid-infos h3{
+        font-size: .7rem;
+    }
+    .rec-vid .rec-vid-infos p{
+        font-size: .6rem;
+    }
+}
+
