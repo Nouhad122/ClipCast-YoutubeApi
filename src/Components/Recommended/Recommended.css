@@ -1,4 +1,6 @@
 .rec-vid{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
@@ -71,4 +73,3 @@
         font-size: .6rem;
     }
 }
-

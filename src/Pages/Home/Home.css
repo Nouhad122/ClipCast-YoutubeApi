@@ -13,7 +13,11 @@
 @media screen and (max-width: 692px){
     .container{
     padding: 60px 5% 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     }
 }
